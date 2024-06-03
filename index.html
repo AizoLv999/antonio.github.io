@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Enhanced Web Page with 3D</title>
+  <style>
+    #defaultBlock {
+      display: table;
+    }
+    div {
+      float: left;
+      height: 470px;
+      width: 300px;
+      padding: 10px;
+    }
+    #block1 {
+      background-color: #FF5733; /* Replace with your chosen color */
+      width: 250px;
+    }
+    #block2 {
+      background-color: #33FF57; /* Replace with your chosen color */
+      width: 250px;
+    }
+    #block3 {
+      background-color: #3357FF; /* Replace with your chosen color */
+      width: 250px;
+    }
+    h2 {
+      text-align: center;
+    }
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+  <script src="sketch.js"></script>
+</head>
+<body style="background-color:red">
+  <main id="defaultBlock">
+    <h2>Main Page Title</h2>
+    <div id="block1">
+      <h2>3D Cone</h2>  
+    </div>
+    <div id="block2">
+      <h2>Title 2</h2>  
+      Content
+    </div>
+    <div id="block3">
+      <h2>Monkey</h2> 
+      <img align="middle" src="160107100400-monkey-selfie.jpg" width="250" height="200">
+      <br><br><br>
+      Content
+    </div>
+  </main>
+  <br><br><br>
+  <a href="https://www.theweathernetwork.com/">click here for weather</a>
+  <br><br><br>
+  <a class="weatherwidget-io" href="https://forecast7.com/en/43d65n79d38/toronto/" data-label_1="TORONTO" data-label_2="WEATHER" data-theme="original">TORONTO WEATHER</a>
+  <script>
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+  </script>
+  <br><br><br>
+  <iframe src="https://calendar.google.com/calendar/embed?src=YOUR_CALENDAR_ID&ctz=America/Toronto" style="border: 0" width="500" height="600" frameborder="0" scrolling="no"></iframe>
+</body>
+</html>
